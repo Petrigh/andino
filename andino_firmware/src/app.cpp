@@ -103,12 +103,14 @@ Motor App::right_motor_(&right_motor_enable_digital_out_, &right_motor_forward_p
 InterruptInArduino App::left_encoder_channel_a_interrupt_in_(Hw::kLeftEncoderChannelAGpioPin);
 InterruptInArduino App::left_encoder_channel_b_interrupt_in_(Hw::kLeftEncoderChannelBGpioPin);
 Encoder App::left_encoder_(&left_encoder_channel_a_interrupt_in_,
-                           &left_encoder_channel_b_interrupt_in_);
+                           &left_encoder_channel_b_interrupt_in_,
+                           &left_motor_);
 
 InterruptInArduino App::right_encoder_channel_a_interrupt_in_(Hw::kRightEncoderChannelAGpioPin);
 InterruptInArduino App::right_encoder_channel_b_interrupt_in_(Hw::kRightEncoderChannelBGpioPin);
 Encoder App::right_encoder_(&right_encoder_channel_a_interrupt_in_,
-                            &right_encoder_channel_b_interrupt_in_);
+                            &right_encoder_channel_b_interrupt_in_,
+                            &right_motor_);
 
 Pid App::left_pid_controller_(Constants::kPidKp, Constants::kPidKd, Constants::kPidKi,
                               Constants::kPidKo, -Constants::kPwmMax, Constants::kPwmMax);
@@ -173,7 +175,7 @@ void App::loop() {
   // Stop the motors if auto-stop interval has been reached.
   if ((millis() - last_set_motors_speed_cmd_) > Constants::kAutoStopWindow) {
     last_set_motors_speed_cmd_ = millis();
-    stop_motors();
+    //stop_motors();
   }
 
   // Required by Arduino libraries to work.
