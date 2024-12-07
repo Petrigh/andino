@@ -66,6 +66,8 @@
 
 #include <stdint.h>
 
+#include <Arduino.h>
+
 #include "interrupt_in.h"
 
 namespace andino {
@@ -110,12 +112,19 @@ long Encoder::read() { return count_; }
 void Encoder::reset() { count_ = 0L; }
 
 void Encoder::callback() {
-  // Read the current channels state into the lowest 2 bits of the encoder state.
+  
+  unsigned long interrupt_time = millis();
+  if (interrupt_time - last_interrupt_time > 5) {  // 50 ms de antirrebote
+    //Serial.print(".");
+    count_ += motor_->get_sentido();
+  }
+  last_interrupt_time = interrupt_time;
+  /*// Read the current channels state into the lowest 2 bits of the encoder state.
   state_ <<= 2;
   state_ |= (channel_b_interrupt_in_->read() << 1) | channel_a_interrupt_in_->read();
 
   // Update the encoder count accordingly.
-  count_ += kTicksDelta[(state_ & 0x0F)];
+  count_ += kTicksDelta[(state_ & 0x0F)];*/
 }
 
 }  // namespace andino
