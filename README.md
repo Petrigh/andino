@@ -15,7 +15,8 @@ This is a fork from the [Andino Project](https://github.com/Ekumen-OS/andino/tre
 This fork was made with the porpouse of adapting the project to be run with 3D printed encoder disks for the
 [Engineering College of National University of La Plata](https://ing.unlp.edu.ar/) who implemented this project
 with students of Robotics Introduction class.
-#### Implementation Team:
+# Implementation Team:
+#### 2024
     Calvo, Matias
     Petrigh, Lautaro
 Andino is a fully open-source diff drive robot designed for educational purposes and low-cost applications.
