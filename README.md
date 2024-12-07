@@ -26,19 +26,12 @@ Raspberry Pi 5 for the [Engineering College of National University of La Plata](
 who implemented this project with students of Robotics Introduction class.
 
 
-#### Dependencies
+### Implementation Teams
 
-1. Install [ROS 2](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
-2. Install [colcon](https://colcon.readthedocs.io/en/released/user/installation.html)
+#### 2024
 
-#### colcon workspace
-
-# Implementation Teams
-
-### 2024
-
-  Calvo, Matias. [LinkedIn](https://www.linkedin.com/in/calvomatias) 
-  Petrigh, Lautaro. [LinkedIn](https://www.linkedin.com/in/lautaro-petrigh-3876b7232) 
+   Calvo, Matias. [LinkedIn](https://www.linkedin.com/in/calvomatias)
+   Petrigh, Lautaro. [LinkedIn](https://www.linkedin.com/in/lautaro-petrigh-3876b7232)
 
 <p align="center">
   <img src="docs/andino.jpeg" width=500 />
