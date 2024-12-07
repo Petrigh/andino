@@ -98,12 +98,16 @@ class Motor {
   /// @param speed Motor speed value.
   void set_speed(int speed);
 
+  int get_sentido();
+
  private:
   /// Minimum speed value (negative speeds are considered as positive backward speeds).
   static constexpr int kMinSpeed{0};
 
   /// Maximum speed value.
   static constexpr int kMaxSpeed{255};
+
+  bool forward;
 
   /// Digital output connected to motor enable pin.
   const DigitalOut* enable_digital_out_;
