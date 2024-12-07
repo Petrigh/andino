@@ -66,6 +66,7 @@
 
 #include <stdint.h>
 
+#include "motor.h"
 #include "interrupt_in.h"
 
 namespace andino {
@@ -79,9 +80,12 @@ class Encoder {
   ///
   /// @param channel_a_interrupt_in Digital interrupt input connected to encoder channel A pin.
   /// @param channel_b_interrupt_in Digital interrupt input connected to encoder channel B pin.
-  Encoder(const InterruptIn* channel_a_interrupt_in, const InterruptIn* channel_b_interrupt_in)
+  Encoder(const InterruptIn* channel_a_interrupt_in, 
+          const InterruptIn* channel_b_interrupt_in, 
+          Motor* motor)
       : channel_a_interrupt_in_(channel_a_interrupt_in),
-        channel_b_interrupt_in_(channel_b_interrupt_in) {}
+        channel_b_interrupt_in_(channel_b_interrupt_in),
+        motor_(motor) {}
 
   /// @brief Initializes the encoder.
   void begin();
@@ -95,6 +99,9 @@ class Encoder {
   void reset();
 
  private:
+  Motor* motor_;
+
+  volatile unsigned long last_interrupt_time = 0;
   /// Ticks delta lookup table. Its content is defined as follows:
   ///   +--------+-----+-----+--------+-----------+
   ///   | Number | Old | New | Binary | Direction |
