@@ -26,8 +26,8 @@ Raspberry Pi 5 for the [Engineering College of National University of La Plata](
 who implemented this project with students of Robotics Introduction class.
 # Implementation Team:
 ### 2024
-Calvo, Matias. [LinkedIn](https://www.linkedin.com/in/calvomatias/)
-Petrigh, Lautaro. [LinkedIn](https://www.linkedin.com/in/lautaro-petrigh-3876b7232/)
+Calvo, Matias. ![LinkedIn](https://www.linkedin.com/in/calvomatias/)
+Petrigh, Lautaro. ![LinkedIn](https://www.linkedin.com/in/lautaro-petrigh-3876b7232/)
 
 <p align="center">
   <img src="docs/andino.jpeg" width=500 />
