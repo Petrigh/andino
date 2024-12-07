@@ -30,9 +30,10 @@ who implemented this project with students of Robotics Introduction class.
 
 #### 2024
 
-   Calvo, Matias. [LinkedIn](https://www.linkedin.com/in/calvomatias)
+   Calvo, Matias. [LinkedIn](https://www.linkedin.com/in/calvomatias)\n
    Petrigh, Lautaro. [LinkedIn](https://www.linkedin.com/in/lautaro-petrigh-3876b7232)
-####
+
+
 <p align="center">
   <img src="docs/andino.jpeg" width=500 />
 </p>
