@@ -16,7 +16,7 @@ With its open-source design, anyone can modify and customize the robot to suit t
 
 <div align="center">
   
-  ![Logo UNLP](./docs/logo_unlp.png)
+  [<img src="docs/logo_unlp.png"/>](https://ing.unlp.edu.ar/)
 
 </div>
 
