@@ -1,6 +1,6 @@
 <div align="center">
 
-  ![Logo UNLP](./docs/logo_unlp.png#gh-dark-mode-only)
+  ![Logo UNLP](./docs/logo_unlp.png)
   ![Logo White](./docs/logo_white.svg#gh-dark-mode-only)
 
 </div>
