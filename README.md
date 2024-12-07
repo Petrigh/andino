@@ -25,7 +25,7 @@ This fork was made with the porpouse of adapting the project to be run with 3D p
 Raspberry Pi 5 for the [Engineering College of National University of La Plata](https://ing.unlp.edu.ar/) 
 who implemented this project with students of Robotics Introduction class.
 # Implementation Team:
-## 2024
+### 2024
 Calvo, Matias. [LinkedIn](https://www.linkedin.com/in/calvomatias/)
 Petrigh, Lautaro. [LinkedIn](https://www.linkedin.com/in/lautaro-petrigh-3876b7232/)
 
