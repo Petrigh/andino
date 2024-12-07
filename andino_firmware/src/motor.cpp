@@ -64,6 +64,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "motor.h"
 
+#include <Arduino.h>
 #include "digital_out.h"
 #include "pwm_out.h"
 
@@ -78,7 +79,7 @@ void Motor::begin() {
 void Motor::enable(bool enabled) { enable_digital_out_->write(enabled ? 1 : 0); }
 
 void Motor::set_speed(int speed) {
-  bool forward = true;
+  forward = true;
 
   if (speed < kMinSpeed) {
     speed = -speed;
@@ -92,9 +93,21 @@ void Motor::set_speed(int speed) {
   if (forward) {
     forward_pwm_out_->write(speed);
     backward_pwm_out_->write(0);
+    forward = true;
   } else {
     backward_pwm_out_->write(speed);
     forward_pwm_out_->write(0);
+    forward = false;
+  }
+}
+
+int Motor::get_sentido(){
+  if(forward){
+    //Serial.print("1");
+    return 1;
+  }else{
+    //Serial.print("-1");
+    return -1;
   }
 }
 
