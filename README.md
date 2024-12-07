@@ -25,6 +25,14 @@ This fork was made with the porpouse of adapting the project to be run with 3D p
 Raspberry Pi 5 for the [Engineering College of National University of La Plata](https://ing.unlp.edu.ar/) 
 who implemented this project with students of Robotics Introduction class.
 
+
+#### Dependencies
+
+1. Install [ROS 2](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
+2. Install [colcon](https://colcon.readthedocs.io/en/released/user/installation.html)
+
+#### colcon workspace
+
 # Implementation Teams
 
 ### 2024
