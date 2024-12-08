@@ -1,6 +1,6 @@
 <div align="center">
   
-  [<img src="docs/logo_unlp.png"/>](https://ing.unlp.edu.ar/)
+  [<img src="../logo_unlp.png"/>](https://ing.unlp.edu.ar/)
 
 </div>
 
