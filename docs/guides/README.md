@@ -1,3 +1,9 @@
+<div align="center">
+  
+  [<img src="docs/logo_unlp.png"/>](https://ing.unlp.edu.ar/)
+
+</div>
+
 Aqui se pueden encontrar guias donde se explican cambios, advertencias, 
 mejoras o consejos para el desarrollo del robot Andino dentro de la catedra
 de Introduccion a la Robotica en la facultad de Ingenieria UNLP
