@@ -4,5 +4,5 @@ de Introduccion a la Robotica en la facultad de Ingenieria UNLP
 
 ### Guias
  - Trabajo de Desarrollo 2024 - Calvo.Petrigh.pdf
-       Esta es la prime guia la cual se ha cambiado el codigo de firmware del andino nano
+     - Esta es la prime guia la cual se ha cambiado el codigo de firmware del andino nano
        se acomodo para correr con discos impresos en el encoder
